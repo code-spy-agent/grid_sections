@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUMA - Layout</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 5px;
+            background-color: #f0f0f0;
+        }
+        .item {
+            height: 50px;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .full-width { width: 100%; }
+        .half-width { width: calc(50% - 5px); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item full-width" style="background-color: #FFD700;"></div>
+        <div class="item full-width" style="background-color: #FF4500;"></div>
+        <div class="item full-width" style="background-color: #000000;"></div>
+        <div class="item full-width" style="background-color: #1E1E1E;"></div>
+        <div class="item full-width" style="background-color: #FF5900; height: 100px;"></div>
+        <div class="item half-width" style="background-color: #00A1E0;"></div>
+        <div class="item half-width" style="background-color: #00A1E0;"></div>
+        <div class="item half-width" style="background-color: #7D00A1;"></div>
+        <div class="item half-width" style="background-color: #7D00A1;"></div>
+        <div class="item half-width" style="background-color: #FFC600;"></div>
+        <div class="item half-width" style="background-color: #FFC600;"></div>
+        <div class="item half-width" style="background-color: #00B388;"></div>
+        <div class="item half-width" style="background-color: #00B388;"></div>
+        <div class="item half-width" style="background-color: #FF3E6C;"></div>
+        <div class="item half-width" style="background-color: #FF3E6C;"></div>
+        <div class="item half-width" style="background-color: #4CAF50;"></div>
+        <div class="item half-width" style="background-color: #4CAF50;"></div>
+        <div class="item half-width" style="background-color: #2196F3;"></div>
+        <div class="item half-width" style="background-color: #2196F3;"></div>
+        <div class="item half-width" style="background-color: #9C27B0;"></div>
+        <div class="item half-width" style="background-color: #9C27B0;"></div>
+        <div class="item half-width" style="background-color: #795548;"></div>
+        <div class="item half-width" style="background-color: #795548;"></div>
+        <div class="item half-width" style="background-color: #607D8B;"></div>
+        <div class="item half-width" style="background-color: #607D8B;"></div>
+        <div class="item full-width" style="background-color: #FF9800;"></div>
+        <div class="item half-width" style="background-color: #8BC34A;"></div>
+        <div class="item half-width" style="background-color: #8BC34A;"></div>
+        <div class="item half-width" style="background-color: #F44336;"></div>
+        <div class="item half-width" style="background-color: #F44336;"></div>
+        <div class="item full-width" style="background-color: #333333; height: 100px;"></div>
+    </div>
+</body>
+</html>
