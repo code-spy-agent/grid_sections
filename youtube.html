@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-inspired Layout</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header {
+            background-color: #FF0000;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            color: white;
+        }
+        .main-content {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 240px;
+            background-color: #212121;
+            color: white;
+            padding: 16px;
+            overflow-y: auto;
+        }
+        .video-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+        .search-bar {
+            background-color: #f9f9f9;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 10px 16px;
+        }
+        .filter-options {
+            background-color: #f1f1f1;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 10px 16px;
+        }
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            padding: 24px;
+        }
+        .video-item { 
+            width: calc(33.33% - 16px);
+            height: 200px;
+            background-color: #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+            .video-item {
+                width: calc(50% - 16px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">YouTube Header</div>
+        <div class="main-content">
+            <div class="sidebar">Sidebar</div>
+            <div class="video-container">
+                <div class="search-bar">Search Bar</div>
+                <div class="filter-options">Filter Options</div>
+                <div class="video-grid">
+                    <div class="video-item">Video 1</div>
+                    <div class="video-item">Video 2</div>
+                    <div class="video-item">Video 3</div>
+                    <div class="video-item">Video 4</div>
+                    <div class="video-item">Video 5</div>
+                    <div class="video-item">Video 6</div>
+                    <div class="video-item">Video 7</div>
+                    <div class="video-item">Video 8</div>
+                    <div class="video-item">Video 9</div>
+                    <div class="video-item">Video 10</div>
+                    <div class="video-item">Video 11</div>
+                    <div class="video-item">Video 12</div>
+                    <div class="video-item">Video 13</div>
+                    <div class="video-item">Video 14</div>
+                    <div class="video-item">Video 15</div>
+                    <div class="video-item">Video 16</div>
+                    <div class="video-item">Video 17</div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
